@@ -1,0 +1,11 @@
+/* Stile base per la tabella */
+table {
+    width: 100%;  /* La tabella occuperà tutta la larghezza disponibile */
+    border-collapse: separate; /* Mantiene il bordo delle celle separato per permettere spaziatura */
+    border-spacing: 15px;  /* Spaziatura tra le celle */
+    margin-top: 20px;  /* Spaziatura superiore */
+    text-align: left;  /* Allineamento del testo a sinistra */
+    font-family: Arial, sans-serif; /* Font pulito e leggibile */
+    background-color: #3b7dd3; /* Colore di sfondo per la tabella */
+}
+

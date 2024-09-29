@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lista persona</title>
+</head>
+<body>
+    <h1>MODULO</h1>
+    <form id="Lista persona" action="saluto.html" method="POST" onsubmit="return inviaModulo()">
+        <fieldset>
+            <legend>Dati personali</legend>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+
+            <label for="surname">cognome:</label><br>
+            <input type="text" id="surname" name="surname" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+
+            <label for="birthdate">Data di nascita:</label><br>
+            <input type="date" id="birthdate" name="birthdate" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+            
+             <label for="tel">Numero di telefono:</label><br>
+            <input type="tel" id="tel" name="tel" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+
+             <label for="country">Paese:</label><br>
+            <input type="text" id="country" name="country" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+
+             <label for="province">Provincia:</label><br>
+            <input type="text" id="province" name="province" class="w-1/5 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"> <br>
+
+        </fieldset>
+
+            <div>
+                <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded" onclick="aggiungiPersona()">Aggiungi Persona</button>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Invia Modulo</button>
+            </div>
+          
+    </form>
+    <table class="table" >
+        <thead>
+            <tr >
+                <th>NOME</th>
+                <th>COGNOME</th>
+                <th>EMAIL</th>
+                <th>DATA DI NASCITA</th>
+                <th>NUMERO DI TELEFONO</th>
+                <th>PAESE</th>
+                <th>PROVINCIA</th>
+                <th>OPZIONE</th>
+
+              
+            </tr>
+        </thead>
+        <tbody id="dati">
+
+        </tbody>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
